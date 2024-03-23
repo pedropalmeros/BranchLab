@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Label1 = New Label()
+        Label2 = New Label()
         SuspendLayout()
         ' 
         ' Label1
@@ -34,11 +35,21 @@ Partial Class Form1
         Label1.TabIndex = 0
         Label1.Text = "LABEL CREADA EN MAIN "
         ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(21, 143)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(147, 15)
+        Label2.TabIndex = 1
+        Label2.Text = "Label_creado_en_Pedro_01"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Label2)
         Controls.Add(Label1)
         Name = "Form1"
         Text = "Form1"
@@ -47,4 +58,5 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class
