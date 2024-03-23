@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Label1 = New Label()
         Label2 = New Label()
+        Label3 = New Label()
         SuspendLayout()
         ' 
         ' Label1
@@ -44,11 +45,21 @@ Partial Class Form1
         Label2.TabIndex = 1
         Label2.Text = "Label_creado_en_Pedro_01"
         ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(286, 143)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(147, 15)
+        Label3.TabIndex = 2
+        Label3.Text = "Label_creado_en_Pedro_01"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Name = "Form1"
@@ -59,4 +70,5 @@ Partial Class Form1
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
 End Class
